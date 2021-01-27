@@ -14,3 +14,5 @@ net_adapter_info=$(lspci)
 
 # Call
 echo $net_adapter_info > output.txt
+
+# End
