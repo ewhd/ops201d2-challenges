@@ -8,11 +8,37 @@
 #                               each directory
 
 # Declare global variables
-files=("f1.txt" "f2.txt" "f3.txt" "f4.txt" "f5.txt")
 
-directory_array=("dir1" "dir2" "dir3" "dir4")
+dir_names=("dir1" "dir2" "dir3" "dir4")
+dir_paths=()
 
-# Declare functions
 
 # Main
-mkdir --verbose
+
+### Create 4 directories from dir_names
+mkdir ${dir_names[*]}
+
+### Store their paths as strings in array dir_paths
+for i in $(ls -d */)
+do 
+    dir_paths+=($(pwd)/$i)
+done
+
+### Create a new .txt file in each directory path in dir_paths
+for d in ${dir_paths[@]}
+do
+    touch $d/new.txt
+done
+
+
+# Testing: the following prints the contents and subcontents in a tree-like format
+# must be installed with:
+#       sudo apt install tree
+# tree .
+
+# Cleanup -- optional
+### Delete the directories and .txt files created above
+# rm -r ${dir_names[@]}
+
+
+# End
