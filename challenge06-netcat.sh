@@ -30,11 +30,11 @@ port_scan_fun() {
 }
 
 # Main
-echo "test2"
+
 ### This line gets a target IP from the user
 read -p "Enter IPv4 address of target computer to scan for listening ports from 1-1023: " target_ip
 
-### This line calls the function port_scan_fun() with the variable target_ip as its argument
+### This line calls the function port_scan_fun() with the contents of variable target_ip as its argument
 port_scan_fun $target_ip 
 
 
