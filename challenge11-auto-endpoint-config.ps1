@@ -3,6 +3,9 @@
 # Date of last revision:   2/8/21
 # Purpose:                 Automate the configuring of a new system by running this set of commands
 
+# All commands in this script pulled from https://github.com/superswan/Powershell-SysAdmin
+# For documentation, see: https://docs.google.com/document/d/1TSlye4iv_waxU_9otDB80AjjI56IqT10PWPZVbQqH08/edit#
+
 
 ### Main
 
