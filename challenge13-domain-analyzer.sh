@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script:                       challenge07-logs.sh
+# Script:                       challenge13-domain-analyzer.sh
 # Author:                       Ethan Denny
-# Date of latest revision:      2/2/21
+# Date of latest revision:      2/10/21
 # Purpose:                      
 #           A bash script that asks a user to type a domain, then displays information about the typed domain
 #           Uses whois, dig, host, and nslookup
